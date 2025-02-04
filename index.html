@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" class="nav--link" href="index.css" />
+  <script src="index.js" type="module"> </script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav" id="nav">
+      <ul class="nav__lista">
+        <li class="nav__item">
+          <a class="nav--link" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav--link" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav--link" href="#educacion">Educación</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav--link" href="#certificados">Certificados</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav--link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <div class="container_inicio">
+      <div class="cursor">
+        <h1 id="small-title">Salomon Choi</h1>
+      </div>
+
+      <div class="container_inicio_pic">
+        <picture>
+          <img src="./imagenes/salomon.png" alt="SALOMON" class="pfp" />
+          <img src="./imagenes/forma-abstracta1.png" alt="Fondo" class="Fondo">
+        </picture>
+      </div>
+      <div class="container_inicio_info">
+        <h1 id="large-title">Salomon Choi</h1>
+        <p>
+          Estudiante de Ingeniería en Sistemas con experiencia en desarrollo
+          de software, auditorías de seguridad, bases de datos SQL y liderazgo
+          de proyectos académicos. Hábil en la integración de APIs, diseño
+          web. Apasionado por el aprendizaje continuo y creación de soluciones
+          tecnológicas eficaces.
+        </p>
+        <div class="container_inicio_button">
+          <input type="button" value="Descargar CV" class="button" id="download_button" />
+          <input type="button" value="Contacto" class="button" onclick="location.href= `#contacto`" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="container_proyecto">
+      <div class="container_proyecto_card">
+        <div class="card_front">
+          <h4>Proyecto 1</h4>
+          <picture>
+            <img src="./imagenes/proyectos/18.png" alt="PPP" class="imgProyecto" />
+          </picture>
+          <h3>Juego de Apilar Bloques de Colores en 2D</h3>
+          <div class="container_proyecto_lenguaje">
+            <img src="./imagenes/lenguajes/html.png" alt="html" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/css.png" alt="css" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/javascript.png" alt="javascript" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/github.png" alt="github" class="icono_lenguaje" />
+          </div>
+        </div>
+        <div class="card_back">
+          <h3 id="card_back-title">Juego de Apilar Bloques de Colores en 2D</h3>
+          <p>
+            Juego desarrollado en JavaScript donde el jugador debe colocar bloques sobre el anterior, cortando el
+            sobrante y reduciendo la superficie disponible. Incluye lógica de juego y detección de colisiones.
+          </p>
+          <input type="button" value="Ver Código" class="proyect_button" />
+        </div>
+      </div>
+      <!-- ---------------------------------------------- -->
+      <div class="container_proyecto_card">
+        <div class="card_front">
+          <h4>Proyecto2</h4>
+          <picture>
+            <img src="./imagenes/proyectos/17.png" alt="PPP" class="imgProyecto" />
+          </picture>
+          <h3>Chatbot Interactivo con DeepSeek</h3>
+          <div>
+            <img src="./imagenes/lenguajes/html.png" alt="html" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/css.png" alt="css" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/javascript.png" alt="javascript" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/deepseek.png" alt="deepseek" id="icono_deepseek" />
+            <img src="./imagenes/lenguajes/github.png" alt="github" class="icono_lenguaje" />
+          </div>
+        </div>
+        <div class="card_back">
+          <h3 id="card_back-title">Chatbot Interactivo con DeepSeek</h3>
+          <p>
+            Chatbot que utiliza la API de DeepSeek para proporcionar respuestas inteligentes, optimizando la interacción
+            con los usuarios y gestionando dependencias con npm para mayor eficiencia.
+          </p>
+          <input type="button" value="Ver Código" class="proyect_button" />
+        </div>
+      </div>
+      <!-- ---------------------------------------------- -->
+      <div class="container_proyecto_card">
+        <div class="card_front">
+          <h4>Proyecto 3</h4>
+          <picture>
+            <img src="./imagenes/proyectos/19.png" alt="PPP" class="imgProyecto" />
+          </picture>
+          <h3>
+            Análisis y Predicción de Precios Inmobiliarios
+          </h3>
+          <div class="container_proyecto_lenguaje">
+            <img src="./imagenes/lenguajes/python.png" alt="python" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/sk.png" alt="sklearn" id="icono_sklearn""/>
+            <img src=" ./imagenes/lenguajes/github.png" alt="github" class="icono_lenguaje" />
+          </div>
+        </div>
+        <div class=" card_back">
+          <h3 id="card_back-title">Análisis y Predicción de Precios Inmobiliarios</h3>
+          <p>
+            Proyecto en Phyton que utiliza Scikit-Learn para predecir precios de viviendas. Se emplearon Pandas y
+            NumPy para procesar datos, y Matplotlib para visualización. Desarrollado en Google Colab.
+          </p>
+          <input type="button" value="Ver Código" onclick="window.location.href= `https://github.com/SaloChoi/Predicci-n-de-Precios`" class="proyect_button"/>
+        </div>
+      </div>
+      <!-- ---------------------------------------------- -->
+      <div class="container_proyecto_card">
+        <div class="card_front">
+          <h4>Proyecto 4</h4>
+          <picture>
+            <img src="./imagenes/proyectos/20.png" alt="PPP" class="imgProyecto" />
+          </picture>
+          <h3>SIGA: Software de Gestión Agraria</h3>
+          <div class="container_proyecto_lenguaje">
+            <img src="./imagenes/lenguajes/java.png" alt="java" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/sql.png" alt="sql" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/github.png" alt="github" class="icono_lenguaje" />
+          </div>
+        </div>
+
+        <div class="card_back">
+          <h3 id="card_back-title">SIGA: Software de Gestión Agraria</h3>
+          <p>
+            Software desarrollado Java para gestionar productos, pagos y proveedores en el sector agrícola. El sistema
+            se conecta a una base de datos MySQL para generar informes y mostrar gráficos que facilitan la toma de
+            decisiones.
+          </p>
+          <input type="button" value="Ver Código" class="proyect_button" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="educacion">
+    <h2>Educación</h2>
+    <div class="container_educacion">
+      <div class="container_educacion_etapa">
+        <img src="./imagenes/libro1.png" alt="Nivel pasado" class="img_ubicacion" />
+        <img src="./imagenes/aprobar.png" alt="aprobar" class="img_aprobado" />
+        <h3 class="container-educacion-lvl">Secundaria</h3>
+        <p class="container_line">ESCUELA E INSTITUTO PRIVADO GLORIA ELIZABETH MEJÍA</p>
+      </div>
+      <div class="container_educacion_etapa" id="container_etapa_centro">
+        <img src="./imagenes/libro1.png" alt="Nivel actual" class="img_ubicacion" />
+        <img src="./imagenes/aprobar.png" alt="aprobar" class="img_aprobado" />
+        <h3 class="container-educacion-lvl">Ingeniería en Sistemas</h3>
+        <p class="container_line">
+          UNIVERSIDAD NACIONAL AUTÓNOMA DE HONDURAS, CORTÉS
+        </p>
+      </div>
+      <div class="container_educacion_etapa">
+        <img src="./imagenes/misterio.png" alt="Nivel futuro" class="img_ubicacion" />
+        <img src="./imagenes/objetivo.png" alt="Nuevo objetivo" class="img_aprobado" />
+        <h3 class="container-educacion-lvl">Próximamente</h3>
+        <p class="container_line">
+          EL ESFUERZO POR MEJORAR PROFESIONALMENTE CONTINÚA
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificados">
+    <h2>Certificados</h2>
+    <div class="container_certificados">
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/4.png" alt="" class="img_certificado" />
+      </div>
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/6.png" alt="" class="img_certificado" />
+      </div>
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/7.png" alt="" class="img_certificado" />
+      </div>
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/15.png" alt="" class="img_certificado" />
+      </div>
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/1.png" alt="" class="img_certificado" />
+      </div>
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/2.png" alt="" class="img_certificado" />
+      </div>
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/3.png" alt="" class="img_certificado" />
+      </div>
+      <div class="portfolio__project">
+        <img src="./imagenes/certificados/5.png" alt="" class="img_certificado" />
+      </div>
+    </div>
+</body>
+
+<footer id="contacto">
+  <div class="footer_container">
+    <div id="owo">
+      <ul class="icon-list">
+        <li><a href="https://www.linkedin.com/in/salomon-choi-44223b34b/" target="_blank"><img class="programas2" src="./imagenes/linkedin.png"
+              alt="" /></a></li>
+        <li><a href="https://github.com/SaloChoi" target="_blank"><img class="programas2" src="./imagenes/github.png"
+              alt="" /></a></li>
+        <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><img class="programas2" src="./imagenes/instagram.png"
+              alt="" /></a></li>
+      </ul>
+    </div>
+    <div class="footer-email">
+      <h3>Salomon.chooi@gmail.com</h3>
+      <a href="#nav" class="up">
+        <img src="./imagenes/chevron-doble.png" alt="Up" class="up-img">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</html>
