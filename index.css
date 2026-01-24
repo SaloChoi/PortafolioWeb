@@ -245,7 +245,7 @@ h1.titulocursor::after {
 
 h2 {
   text-align: center;
-  color: var(--letra);
+  color: var(--letra) !important;
   padding: 2rem;
   font-size: 2rem;
   margin: 0;
@@ -268,6 +268,7 @@ h2 {
 h4 {
   margin-bottom: 6px;
   margin-top: 10px;
+  color: var(--letra-oscura) !important;
 }
 
 h3 {
@@ -632,25 +633,106 @@ footer {
 
 /* ///////////////////////////////////// */
 
-/* .button {
-  padding: 18px 36px;
-  font-size: 14px;
-  font-weight: bold;
-  color: var(--letra);
-  background: #ffc300;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px var(--dg-color-1);
+.timeline {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
 }
 
-.button:hover {
-  transform: scale(1.1);
-  background: #2ca2b9;
-  box-shadow:
-    0 0 3px #00d4ff,
-    0 0 6px #00d4ff;
-  color: #0a0a0a;
-  border: #0a0a0a;
-} */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #3f3b52;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+
+.date {
+  display: block;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.dot {
+  position: absolute;
+  left: 12px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.purple { background: #8b5cf6; }
+.green  { background: #22c55e; }
+.cyan   { background: #06b6d4; }
+
+.content {
+  background: #332f45;
+  padding: 16px 18px;
+  border-radius: 10px;
+}
+
+.content h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.content p {
+  margin: 0 0 10px;
+  color: #c7c7d1;
+  font-size: 0.9rem;
+}
+
+.file {
+  display: inline-block;
+  background: #3f3b52;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.user img {
+  border-radius: 50%;
+}
+
+.user small {
+  display: block;
+  color: #9ca3af;
+  font-size: 0.75rem;
+}
+
+.avatars {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.avatars img {
+  border-radius: 50%;
+}
+
+.more {
+  background: #3f3b52;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+}
