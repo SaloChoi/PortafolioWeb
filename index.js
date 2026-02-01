@@ -7,3 +7,26 @@ document.getElementById('download_button').addEventListener('click', function() 
 
     link.click();
 });
+
+
+window.copiarEmail = function () {
+  const emailEl = document.getElementById("email");
+  const img = document.querySelector(".copy-img");
+  const msg = document.getElementById("copiado-msg");
+
+  if (!emailEl || !img || !msg) {
+    console.warn("Elementos para copiar email no encontrados");
+    return;
+  }
+
+  navigator.clipboard.writeText(emailEl.innerText).then(() => {
+    img.src = "./imagenes/aprobar.png";
+    msg.classList.add("mostrar");
+
+    setTimeout(() => {
+      img.src = "./imagenes/copia.png";
+      msg.classList.remove("mostrar");
+    }, 1500);
+  });
+};
+

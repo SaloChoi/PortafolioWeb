@@ -531,16 +531,13 @@ footer {
   font-weight: bolder;
   display: flex;
   flex-direction: row;
-  margin-top: 0.5rem;
   font-size: 0.8rem;
   text-align: center;
 }
 
 .footer-email h3 {
   position: relative;
-  margin-top: 0.2rem;
   font-weight: 300;
-  margin-bottom: 2rem;
 }
 
 .up {
@@ -750,4 +747,24 @@ footer {
   display: grid;
   place-items: center;
   font-size: 0.8rem;
+}
+
+
+/* ///////////////////// */
+
+.copiado-msg {
+  margin-left: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.copiado-msg.mostrar {
+  opacity: 1;
+}
+
+.copy-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
 }
