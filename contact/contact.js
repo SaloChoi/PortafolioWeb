@@ -20,14 +20,27 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  // Simulación de envío
+  // Envio
+ emailjs.send("service_yspk1ft", "template_rht3nrd", {
+  name: nombre,
+  email: email,
+  message: mensaje,
+  title:" Contacto desde Portafolio",
+})
+.then(function () {
   respuesta.textContent = "Mensaje enviado correctamente.";
   respuesta.style.color = "green";
-
   form.reset();
+})
+.catch(function (error) {
+  respuesta.textContent = "❌ Error al enviar el mensaje.";
+  respuesta.style.color = "red";
+  console.error(error);
+});
 });
 
 function validarEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
 }
+
