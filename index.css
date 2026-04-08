@@ -237,12 +237,13 @@ h1.titulocursor::after {
 /*///////////////// PROYECTOS */
 
 .container_proyecto {
-  display: flex;
-  flex-direction: row;
+
   justify-content: center;
   min-width: 300px;
-  flex-wrap: wrap;
   background-color: var(--bg-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 20px 10px;
 }
 
 h2 {
@@ -259,7 +260,7 @@ h2 {
   background-color: var(--bg-color);
   max-width: 285px;
   max-height: 341px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   position: relative;
   color: var(--letra);
   text-align: center;
@@ -870,3 +871,6 @@ footer {
   margin-top: 0.8rem;
   text-align: center;
 }
+
+
+

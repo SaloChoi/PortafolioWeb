@@ -78,7 +78,32 @@
   <section id="proyectos">
     <h2>Proyectos</h2>
     <div class="container_proyecto">
-            <div class="container_proyecto_card">
+
+      <div class="container_proyecto_card ">
+        <div class="card_front">
+          <!-- <h4>Proyecto 1</h4> -->
+          <picture>
+            <img src="./imagenes/proyectos/15.png" alt="PPP" class="imgProyecto" />
+          </picture>
+          <h3>Gestor de Tareas tipo Trello (TaskBoard)</h3>
+          <div class="container_proyecto_lenguaje">
+            <img src="./imagenes/lenguajes/html.png" alt="html" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/css.png" alt="css" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/javascript.png" alt="javascript" class="icono_lenguaje" />
+            <img src="./imagenes/lenguajes/react.png" alt="github" class="icono_lenguaje" />
+          </div>
+        </div>
+        <div class="card_back">
+          <h3 id="card_back-title">Gestor de Tareas tipo Trello (TaskBoard)</h3>
+          <p>
+           Aplicación web estilo Trello para gestión de tareas con soporte para drag & drop, autenticación de usuarios y almacenamiento en la nube. Permite a cada usuario crear y organizar sus propios tableros y columnas de trabajo de forma segura
+          </p>
+          <input type="button" value="Ver Demo"
+            onclick="window.open('https://trelo-8muv.vercel.app/', '_blank')" class="button" />
+        </div>
+      </div>
+      <!-- ---------------------------------------------- -->
+      <div class="container_proyecto_card ">
         <div class="card_front">
           <!-- <h4>Proyecto 1</h4> -->
           <picture>
@@ -95,8 +120,9 @@
         <div class="card_back">
           <h3 id="card_back-title">Plataforma E-Commerce con Autenticación</h3>
           <p>
-          Aplicación web desarrollada con React que permite registro e inicio de sesión de usuarios, visualización de productos y gestión de carrito de compras 
-          en una arquitectura multipágina, utilizando almacenamiento en caché
+            Aplicación web desarrollada con React que permite registro e inicio de sesión de usuarios, visualización de
+            productos y gestión de carrito de compras
+            en una arquitectura multipágina, utilizando almacenamiento en caché
           </p>
           <input type="button" value="Ver Demo"
             onclick="window.open('https://aprendiendo-react-alpha.vercel.app/', '_blank')" class="button" />
@@ -214,6 +240,17 @@
     <div class="timeline">
 
       <div class="timeline-item">
+        <h4>Freelancer– Automatización para E-commerce (ENERO 2026-PRESENTE)</h4>
+        <div class="dot green"></div>
+        <div class="content">
+          <p class="fs-4">Desarrollo de soluciones para tiendas online, incluyendo normalización de inventarios,
+            creación de una tienda en Shopify, automatización de flujos entre correo y su base de datos, y desarrollo de
+            un chatbot para Instagram usando las APIs de Meta y OpenAI.</p>
+
+        </div>
+      </div>
+
+      <div class="timeline-item">
         <h4>GR Tecnología (2025)</h4>
         <div class="dot purple"></div>
         <div class="content">
@@ -290,11 +327,11 @@
     <div class="footer-email d-flex align-items-center">
       <div class="d-flex align-items-center mb-2 mt-1">
         <h3 id="email" class="me-2 ps-4">Salomon.chooi@gmail.com</h3>
-      <img src="./imagenes/copia.png" class="copy-img" title="Click para copiar" onclick="copiarEmail(this)">
-      <span id="copiado-msg" class="copiado-msg ">¡Copiado!</span>
-      <a href="#nav" class="up">
-        <img src="./imagenes/chevron-doble.png" alt="Up" class="up-img">
-      </a>
+        <img src="./imagenes/copia.png" class="copy-img" title="Click para copiar" onclick="copiarEmail(this)">
+        <span id="copiado-msg" class="copiado-msg ">¡Copiado!</span>
+        <a href="#nav" class="up">
+          <img src="./imagenes/chevron-doble.png" alt="Up" class="up-img">
+        </a>
       </div>
     </div>
   </div>
