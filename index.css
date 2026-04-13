@@ -112,7 +112,7 @@ header {
 
 .container_inicio_pic {
   width: 220px;
-  height: 300px;
+  height: 290px;
   background-color: none;
   border-radius: 10%;
   position: relative;
@@ -546,6 +546,9 @@ footer {
   font-weight: 300;
 }
 
+
+
+
 .up {
   position: absolute;
   right: 1rem;
@@ -569,6 +572,7 @@ footer {
   .container_inicio {
     flex-direction: column;
     align-items: center;
+    padding-top: 0;
   }
 
   /* #large-title {
@@ -587,6 +591,7 @@ footer {
   .container_inicio_info {
     width: 100%;
     margin: 1rem;
+    padding-top: 0;
     text-align: center;
     align-items: center;
   }
@@ -615,7 +620,10 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width:520px) {
+  .container_inicio{
+    padding-top: 0;
+  }
   h1.titulocursor {
     font-size: 190%;
   }
@@ -628,6 +636,71 @@ footer {
     font-size: 90% !important;
     margin-top: 0 !important;
   }
+
+  .footer-email h3 {
+  position: relative;
+  font-weight: 300;
+  font-size: 1rem;
+
+
+}
+  .copy-img {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-bottom: 0.4rem;
+}
+
+
+.container_inicio_info{
+  padding: 0 0.5rem !important;
+}
+
+#proyectos{
+  margin: 0 !important;
+}
+
+.contact_glass{
+  padding: 1rem !important;
+}
+
+.contact_section{
+  padding:  1rem 0 !important;
+}
+}
+
+
+
+
+@media (max-width: 350px) {
+  h1.titulocursor {
+    font-size: 155%;
+  }
+
+  h3.titulocursor {
+    font-size: 105%;
+  }
+
+  p.descripcionCursor {
+    font-size: 87% !important;
+    margin-top: 0 !important;
+  }
+
+  .footer-email h3 {
+  position: relative;
+  font-weight: 300;
+  font-size: 1rem;
+
+
+}
+  .copy-img {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-bottom: 0.4rem;
+}
+
+.container_inicio_info{
+  padding: 0 0.5rem !important;
+}
 }
 
 @keyframes rotate-scale-up-vertical {
