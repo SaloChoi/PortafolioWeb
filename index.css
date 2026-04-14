@@ -133,7 +133,6 @@ header {
 }
 
 .titulocursor {
-  letter-spacing: 3px;
   margin: 0;
   color: whitesmoke !important;
   overflow: hidden;
