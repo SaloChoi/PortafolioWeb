@@ -1,5 +1,5 @@
 document.getElementById('download_button').addEventListener('click', function() {
-    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1pPIMkQXEewDEtFd2Nm-LuF9RGLp8TKlu';  
+    const pdfUrl = 'https://drive.google.com/uc?export=download&id=10cErfzeWTUdFBUEC_18ap8w8nkRUcq6o';  
 
     const link = document.createElement('a');
     link.href = pdfUrl;
