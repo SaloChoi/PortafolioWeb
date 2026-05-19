@@ -242,11 +242,12 @@ h1.titulocursor::after {
   justify-content: center;
   background-color: var(--bg-color);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
   justify-items: center;  
   padding: 0;
   margin: 0;
   gap: 1rem;
+
 }
 
 h2 {
@@ -980,4 +981,10 @@ footer {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
+}
+
+
+#proximo_button:disabled {
+  cursor: not-allowed;
+    opacity: 0.5;
 }
